@@ -1,0 +1,49 @@
+/* Productlist.css */
+
+/* Container grid padding */
+.MuiGrid-container {
+  padding: 20px;
+}
+
+/* Card shadow and hover effect */
+.MuiCard-root {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.MuiCard-root:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Product image styles */
+.MuiCardMedia-root {
+  object-fit: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+/* Product title */
+.MuiCardContent-root h6 {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #222;
+}
+
+/* Price and rating text */
+.MuiCardContent-root p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 4px;
+}
+
+/* Wishlist button customization */
+.ViewDetails-button {
+  border-color: #f50057 ;
+  color: black;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.ViewDetails-button:hover {
+  background-color: #f50057;
+  color: white;
+}

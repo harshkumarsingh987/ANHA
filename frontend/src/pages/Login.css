@@ -1,0 +1,102 @@
+/* src/pages/Login.css */
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1rem;
+  background: linear-gradient(to right, #fffaf0, #f5f5f5);
+  min-height: 100vh;
+}
+
+.login-paper {
+  padding: 3rem 2.5rem;
+  border-radius: 20px;
+  background-color: #1b010120 !important;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.086);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.login-paper:hover {
+ box-shadow: 0 4px 15px rgba(102, 1, 1, 0.327);
+}
+
+.login-logo {
+  height: 120px;
+  width: 120px;
+  object-fit: contain;
+  margin-bottom: 1.5rem;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(102, 1, 1, 0.327);
+}
+
+
+
+.login-error {
+  color: #d32f2f;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.login-input {
+  margin-bottom: 1rem;
+}
+
+.login-btn {
+  margin-top: 1.5rem;
+  padding: 0.8rem;
+  background: linear-gradient(to right, #f5c518, #d4a600);
+  font-weight: bold;
+  color: #1a1a1a;
+  transition: all 0.5s ease;
+}
+
+.login-btn:hover {
+  background-color: #d4a600;
+  color: white;
+}
+
+.login-link {
+  color: #1976d2;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
+
+.login-redirect {
+  margin-top: 20px;
+}
+.google-login-btn {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 1px solid #dadce0;
+  color: #3c4043;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: none;
+  padding: 8px 0;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.google-login-btn:hover {
+  background-color: #f7f8f8;
+  color: #1a1a1a !important;
+}
+
+.google-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.google-login-text {
+  font-family: 'Roboto', sans-serif;
+
+}

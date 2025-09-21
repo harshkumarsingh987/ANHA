@@ -1,0 +1,95 @@
+/* Profile.css */
+
+.profile-container {
+  margin-top: 80px;
+  max-width: 900px;
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile-card {
+  padding: 24px;
+  border-radius: 16px;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.profile-avatar {
+  width: 80px;
+  height: 80px;
+}
+
+.profile-info {
+  flex-grow: 1;
+}
+
+.profile-name {
+  font-weight: bold;
+}
+
+.profile-email,
+.profile-joined {
+  color: gray;
+  font-size: 14px;
+}
+
+.profile-edit-button {
+  margin-left: auto;
+}
+
+.profile-divider {
+  margin: 24px 0;
+}
+
+.profile-section {
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.profile-section-title {
+  font-weight: 600;
+}
+
+.profile-section-content {
+  margin-top: 8px;
+  color: #555;
+}
+
+.profile-edit-address,
+.profile-view-wishlist {
+    color: black !important;
+  margin-top: 10px;
+}
+
+.profile-logout-button {
+  text-align: right;
+  margin-top: 24px;
+}
+
+.profile-loading,
+.profile-error {
+    color: black !important;
+  text-align: center;
+  margin-top: 100px;
+}
+
+/* Button styling fix */
+button.MuiButton-root {
+  color: black !important;
+  border-color: #ccc !important;
+}
+
+/* Specific overrides for error (logout) button */
+.logout-button.MuiButton-outlinedError {
+  color: #d32f2f !important;
+  border-color: #d32f2f !important;
+}
+
+.logout-button.MuiButton-outlinedError:hover {
+  background-color: rgba(211, 47, 47, 0.08);
+}

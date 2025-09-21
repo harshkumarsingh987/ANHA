@@ -1,0 +1,158 @@
+/* Root AppBar */
+.navbar {
+  background-color: #0d0d0dc9 !important; /* Rich black */
+  color: #ffffff !important;
+  padding: 16px 32px;
+  height: 110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  box-shadow: 0 4px 16px rgba(255, 217, 0, 0.242); /* Gold glow */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Toolbar Flex Styling */
+.navbar-toolbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Logo Box */
+.navbar-logo-box {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+/* Logo Image */
+.navbar-logo {
+  height: 100px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: drop-shadow(0 2px 4px rgba(255, 215, 0, 0.2));
+}
+.navbar-extras {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 20px;
+}
+
+/* Search Bar Container */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 4px 12px;
+  border-radius: 24px;
+  color: #fff !important;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+    width: 250px;
+    max-width: 100%;
+}
+
+.search-bar:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: #f5c518;
+}
+
+/* Search Icon */
+.search-icon {
+  color: #fff;
+  margin-left: 8px;
+}
+
+/* Search Input */
+.search-input {
+    margin: 0 8px ;
+    flex: 1;
+    background: transparent;
+  color: #fff;
+  font-size: 14px;
+  width: 200px;
+  transition: width 0.3s ease;
+    border: none;
+    outline: none;
+
+}
+
+
+.navbar-logo:hover {
+  transform: scale(1.08);
+  filter: drop-shadow(0 4px 12px rgba(255, 215, 0, 0.4));
+}
+
+/* Desktop Navigation Links */
+.navbar-links {
+  display: flex;
+  gap: 16px;
+}
+
+.navbar-button {
+ color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 8px 16px;
+  
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-button:hover {
+  color: #f5c518 !important;
+  background-color: rgba(245, 197, 24, 0.08);
+  transform: translateY(-2px);
+}
+
+
+
+
+/* Highlight active link */
+.active-link {
+  background-color: #f5c518;
+  color: black !important;
+}
+
+
+/* Menu Icon (Hamburger) */
+.menu-icon {
+  color: #ffffff !important;
+  display: none; /* Hidden on desktop */
+}
+
+/* Mobile Drawer */
+.MuiDrawer-paper {
+  background-color: #0d0d0d !important;
+  color: #fff !important;
+  padding: 20px;
+}
+
+.MuiListItemButton-root {
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  transition: background 0.2s ease;
+}
+
+.MuiListItemButton-root:hover {
+  background-color: rgba(245, 197, 24, 0.08);
+}
+
+/* Responsive - Show hamburger on small screens */
+@media (max-width: 900px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}   
